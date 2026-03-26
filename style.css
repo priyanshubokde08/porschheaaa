@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: #000;
+    color: white;
+}
+/* Navbar */
+header {
+    position: fixed;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    z-index: 1000;
+}
+header.scrolled {
+    background: rgba(0, 0, 0, 0.9);
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: "Cherry Cream Soda", system-ui;
+}
+
+nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+    /* border: 2px solid rgb(212, 212, 212); */
+    /* background-color: rgb(193, 220, 224); */
+    /* text-decoration: underline; */
+    border-radius: 6px;
+    padding: 1px;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    width: 100%; 
+    background: url("assets/hero.png") repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* 
+.up {
+    text-align: center;
+    background: rgba(0,0,0,0.2);
+    padding: 40px;
+}
+
+.up h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+} */
+
+
+/* ABOUT SECTION */
+#about {
+    background: linear-gradient(to bottom, #000, #0a0a0a);
+    color: white;
+    padding: 100px 80px;
+    text-align: center;
+}
+
+/* Heading */
+#about h2 {
+    font-size: 36px;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+}
+#about h2:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    letter-spacing: 6px;
+}
+
+/* Tagline */
+#about .tagline {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Description */
+#about .info {
+    max-width: 700px;
+    margin: 0 auto 60px;
+    color: #aaa;
+    line-height: 1.6;
+}
+
+/* Values para */
+.values {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/*  rect box */
+.values div {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 30px;
+    width: 250px;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+/* hover fr rect box */
+.values div:hover {
+    transform: translateY(-10px);
+    border-color: #ffcc00;
+}
+
+/*headline*/
+.values h3 {
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+/* context */
+.values p {
+    color: #bbb;
+    font-size: 14px;
+}
+
+/* Models Sec */
+.models {
+    padding: 80px 50px;
+    text-align: center;
+}
+/* headline */
+.models h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+.models h2:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    letter-spacing: 3px;
+}
+/* cards */
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 10px;
+
+}
+
+.card {
+    background: #111;
+    padding: 0px 10px;
+    transition: 0.4s;
+}
+
+.card img {
+    width: 250px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.card:hover {
+    transform: scale(1.25);
+    border: 1px solid white;
+    border-radius: 8px;
+    font-size: 30px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-family: "Cherry Cream Soda", system-ui; 
+}
+
+/* contact section */
+#contact {
+    background: #000;
+    color: white;
+    padding: 100px 80px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Heading */
+#contact h2 {
+    font-size: 32px;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+}
+#contact h2:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    letter-spacing: 8px;
+}
+
+/* Tagline */
+.contact-tagline {
+    color: #aaa;
+    margin-bottom: 50px;
+}
+
+/* Container */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+/* left & right part */
+
+.contact-left, .contact-right {
+    width: 300px;
+    text-align: left;
+    padding: 20px;
+    border-left: 2px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.contact-left .social-network{
+    display: flex;
+    direction: row;
+}
+/* hover effect */
+.contact-left:hover,
+.contact-right:hover {
+    border-color: #ffcc00;
+    transform: translateY(-5px);
+}
+
+/* Titles */
+.contact-left h3,
+.contact-right h3 {
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+/* Text */
+.contact-left p,
+.contact-right p {
+    color: #bbb;
+    line-height: 1.8;
+}
+section .lastname{
+    font-family: "Cherry Cream Soda", system-ui;
+    margin-top: 30px;
+    padding-top: 35px;
+    font-size: 27px;
+}
