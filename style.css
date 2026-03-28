@@ -191,15 +191,14 @@ nav a:hover {
     margin-bottom: 10px;
     font-family: "Cherry Cream Soda", system-ui; 
 }
-.card p{
+.card .info{
     color: #a3a3a3;
     font-size: 12px;
-    
+    width: 250px;
 }
-.card p:hover{
+.card .info:hover{
     color: #d8d6d6;
 }
-
 .card .button{
     background-color: #bbb;
     border: none;
